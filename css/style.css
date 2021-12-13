@@ -123,7 +123,7 @@ path.current-floor {
     margin: 0;
 }
 .counter {
-    font-family: "Bebas Neue Regular", sans-serif;
+    font-family: Bebas Neue;
     color: #635854;
     font-size: 115px;
     font-weight: normal;
@@ -137,4 +137,45 @@ path.current-floor {
     border: none;
     padding: 16px 36px;
     cursor: pointer;
+}
+.modal {
+    position: fixed; /*фиксированная позиция, поверх всего сайта */
+    left: 0; /* приклеиваем к левому краю */
+    top: 0; /*приклеиваем к верху */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex; /* родительский элемент - гибкий */
+    justify-content: center;
+    align-items: center;
+
+}
+.modal-dialog {
+    max-width: 1000px;
+    min-height: 565px;
+    background-color: #fff;
+    flex-grow: 1;
+    display: flex;
+    
+}
+.modal-image {
+    background-color: #ebebeb;
+    max-width: 60%;
+    text-align: center;
+    padding: 50px;
+}
+.modal-title {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.modal-info {
+    width: 40%;
+    padding: 50px 46px;
+    margin: 0;
 }
